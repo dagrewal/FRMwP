@@ -27,5 +27,9 @@ if __name__ == "__main__":
     plt.show()
     """
 
-    seasonal_decompose(SP_prices, period=12).plot()
-    plt.show()
+    #seasonal_decompose(SP_prices, period=12).plot()
+    #plt.show()
+
+    sm.graphics.tsa.plot_acf(SP_prices, lags=30)
+    plt.xlabel('Number of Lags')
+    plt.show
